@@ -6,7 +6,7 @@ The objective of this project is to design and evaluate multiple machine learnin
 ---
 
 ## b. Dataset Description
-
+   
 The Loan Approval dataset contains demographic and financial information of loan applicants. The features include applicant income, co-applicant income, loan amount, credit history, education level, employment status, marital status, dependents, and property area.
 
 - **Number of Instances:** More than 600  
@@ -92,4 +92,22 @@ The application is deployed using Streamlit Community Cloud.
 ---
 
 ## Repository Structure
+``` 
 
+loan-approval-ml-assignment/
+│
+├── app.py
+├── run_training.py
+├── requirements.txt
+├── README.md
+│
+└── model/
+├── data_loader.py
+├── logistic_model.py
+├── decision_tree_model.py
+├── knn_model.py
+├── naive_bayes_model.py
+├── random_forest_model.py
+└── xgboost_model.py
+
+```
