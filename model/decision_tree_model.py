@@ -1,0 +1,18 @@
+from sklearn.tree import DecisionTreeClassifier
+from sklearn.metrics import *
+
+def train_decision_tree(X_train, X_test, y_train, y_test):
+    model = DecisionTreeClassifier(max_depth=5, random_state=42)
+    model.fit(X_train, y_train)
+
+    y_pred = model.predict(X_test)
+    y_prob = model.predict_proba(X_test)[:, 1]
+
+    return {
+        "Accuracy": accuracy_score(y_test, y_pred),
+        "AUC": roc_auc_score(y_test, y_prob),
+        "Precision": precision_score(y_test, y_pred),
+        "Recall": recall_score(y_test, y_pred),
+        "F1": f1_score(y_test, y_pred),
+        "MCC": matthews_corrcoef(y_test, y_pred)
+    }
