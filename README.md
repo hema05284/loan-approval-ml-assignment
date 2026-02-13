@@ -100,14 +100,23 @@ loan-approval-ml-assignment/
 ├── run_training.py
 ├── requirements.txt
 ├── README.md
+├── loan_prediction.csv             
+│
 │
 └── model/
-├── data_loader.py
-├── logistic_model.py
-├── decision_tree_model.py
-├── knn_model.py
-├── naive_bayes_model.py
-├── random_forest_model.py
-└── xgboost_model.py
+|    ├── data_loader.py
+|    ├── decision_tree_model.py 
+|    ├── knn_model.py
+|    ├── logistic_model.py
+|    ├── naive_bayes_model.py
+|    ├── random_forest_model.py
+|    └── xgboost_model.py
+├── saved_models/
+│   ├── logistic.pkl
+│   ├── decision_tree.pkl
+│   ├── knn.pkl
+│   ├── naive_bayes.pkl
+│   ├── random_forest.pkl
+│   └── xgboost.pkl
 
 ```
