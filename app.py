@@ -64,7 +64,7 @@ model_files = {
 # ---------------------------------------
 
 uploaded_file = st.file_uploader(
-    "Upload Test Dataset (must include 'Loan_Status' column)",
+    "Upload Test Dataset (must include 'Loan_Status' column with values Y or N)",
     type=["csv"]
 )
 
